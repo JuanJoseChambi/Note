@@ -1,0 +1,13 @@
+@import "../../Style/variable";
+.buttonComponent {
+    background-color: transparent;
+    color: white;
+    padding: .2rem .5rem;
+    border-radius: .4rem;
+    font-weight: $Thin;   
+    transition: background-color .5s; 
+}
+.buttonComponent:hover{
+    background-color: #2c2b2bca;
+    
+}
