@@ -4,7 +4,8 @@
     color: white;
     padding: .2rem .5rem;
     border-radius: .4rem;
-    font-weight: $Thin;   
+    font-weight: $Thin;  
+    font-size: 3vmin; 
     transition: background-color .5s; 
 }
 .buttonComponent:hover{

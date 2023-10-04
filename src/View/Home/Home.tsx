@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import style from "./Home.module.scss"
-import Nav from "../../Components/Nav/Nav"
+import CreateNote from "../../Components/CreateNote/CreateNote"
+import RenderNote from "../../Components/RenderNote/RenderNote"
 
 function Home() {
 
@@ -11,7 +12,8 @@ function Home() {
 
   return (
     <div className={style.homeView}>
-      <Nav/>
+      <CreateNote/>
+      <RenderNote/>
     </div>
   )
 }
