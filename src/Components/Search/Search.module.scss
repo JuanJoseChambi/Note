@@ -1,0 +1,36 @@
+.btnSeacrh{
+    position: absolute;
+    top: 20px;
+    width: 30px;
+    border-radius: 50px;
+    height: 30px;
+    overflow: hidden;
+    transition: width .5s;
+}
+.btnSeacrh:hover{
+    width: 300px;
+}
+.searchComponent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: white;
+    padding: 0 8px;
+    label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: gray;
+        width: 5%;
+        color: black;
+        cursor: pointer;
+    }
+    input{
+        width: 91.5%;
+        font-size: 13px;
+    }
+}

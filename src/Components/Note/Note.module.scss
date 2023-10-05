@@ -1,0 +1,17 @@
+@import "../../Style/variable";
+.noteComponent{
+    width: 165px;
+    height: 165px;
+    border-radius: 40px 3px 40px 40px;
+    padding: 20px 20px;
+    background-color: red;
+    margin: 10px;
+    h3{
+        font-weight: $SemiBold;
+        letter-spacing: 2px;
+    }
+    p{
+        font-size: 14px;
+        font-weight: $Thin;
+    }
+}
