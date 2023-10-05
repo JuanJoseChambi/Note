@@ -11,6 +11,15 @@ function ContainerNote() {
         <Note/>
         <Note/>
         <Note/>
+        <Note/>
+        <Note/>
+        <Note/>
+        <Note/>
+        <Note/>
+        <Note/>
+        <Note/>
+        <Note/>
+        <Note/>
     </div>
   )
 }
