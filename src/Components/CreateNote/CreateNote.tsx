@@ -2,9 +2,7 @@ import style from "./CreateNote.module.scss"
 
 function CreateNote() {
   return (
-    <div className={style.createNoteComponent}>
-        <h1 className={style.titleNote}>Note</h1>
-        <form className={style.containerCreate}>
+    <form className={style.createNoteComponent}>
             <h3>Create Note</h3>
             <div>
                 <label>Titulo</label>
@@ -15,7 +13,6 @@ function CreateNote() {
                 <input type="text"/>
             </div>
         </form>
-    </div>
   )
 }
 

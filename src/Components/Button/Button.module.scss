@@ -2,13 +2,13 @@
 .buttonComponent {
     background-color: transparent;
     color: white;
-    padding: .2rem .5rem;
-    border-radius: .4rem;
+    padding: .6rem 1rem;
+    border-radius: .6rem;
     font-weight: $Thin;  
     font-size: 3vmin; 
     transition: background-color .5s; 
-}
-.buttonComponent:hover{
-    background-color: #2c2b2bca;
-    
+    cursor: pointer;
+    &:hover{
+        background-color: #2c2b2b;
+    }
 }

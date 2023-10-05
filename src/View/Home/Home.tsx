@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import style from "./Home.module.scss"
-import CreateNote from "../../Components/CreateNote/CreateNote"
 import RenderNote from "../../Components/RenderNote/RenderNote"
+import OptionsNote from "../../Components/OptionsNote/OptionsNote"
 
 function Home() {
 
@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <div className={style.homeView}>
-      <CreateNote/>
+      <OptionsNote/>
       <RenderNote/>
     </div>
   )
