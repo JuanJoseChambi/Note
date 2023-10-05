@@ -1,11 +1,9 @@
-// import CreateNote from "../CreateNote/CreateNote";
 import Button from "../Button/Button";
 import style from "./OptionsNote.module.scss";
 
 function OptionsNote() {
     function handlerButton () {
         console.log("Evento");
-        
     }
 
   return (
