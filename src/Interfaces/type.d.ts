@@ -12,10 +12,15 @@ export interface ButtonInt {
 }
 
 // Estado Context
-export interface NoteState {
+export interface Note {
     id:string
     title:string
     note:string
+}
+
+export interface NoteState {
+    totalNotes:number
+    notes:Note[]
 }
 
 // PropContext
@@ -26,7 +31,7 @@ export interface NoteContextProp {
 
 // Note Actions (Reducer)
 export type NoteActions = 
-    | {type: "createNote", payload: NoteState}
-    | {type: "deleteNote", payload: {id: string}}
-    | {type: "updateNote", payload: {id: string}}
+    | {type:"createNote", payload: Note}
+    | {type:"deleteNote", payload: {id: string}}
+    | {type:"updateNote", payload: {id: string}}
 

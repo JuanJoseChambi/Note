@@ -5,16 +5,23 @@ export function NoteReducer (state: NoteState, action : NoteActions) {
         case "createNote":
             return {
                 ...state,
-                title: state.title = action.payload.title,
-                note: state.note = action.payload.note
+                notes: [...state.notes, action.payload]
             }
         case "deleteNote":
             return {
-
+                ...state,
+                notes: state.notes.filter((note) => note.id !== action.payload.id)
             }
         case "updateNote":
             return {
-                
+                ...state,
+                notes: state.notes.map(note => {
+                    if (note.id === action.payload.id) {
+                        return {...note, note: action.payload}
+                    }else{
+                        return note
+                    }
+                })
             }
         default:
             return state
