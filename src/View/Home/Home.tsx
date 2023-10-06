@@ -8,8 +8,7 @@ function Home() {
   useEffect(() => {
     
   },[])
-
-
+  
   return (
     <div className={style.homeView}>
       <OptionsNote/>
