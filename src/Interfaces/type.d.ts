@@ -1,4 +1,4 @@
-import { MouseEventHandler } from "react"
+import { MouseEventHandler, ReducerWithoutAction } from "react"
 
 export interface Children {
     children: JSX.Element | JSX.Element[]
@@ -26,7 +26,9 @@ export interface NoteState {
 // PropContext
 export interface NoteContextProp {
     noteState: NoteState
-    handlerNote: (id:string) => void
+    handlerSendNote: (note:object) => ReducerWithoutAction
+    handlerDeleteNote: (id: string) => ReducerWithoutAction
+    handlerUpdateNote: (id: string) => ReducerWithoutAction
 }
 
 // Note Actions (Reducer)

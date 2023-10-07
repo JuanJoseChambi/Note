@@ -3,7 +3,7 @@ import { Children, NoteState } from "../Interfaces/type";
 import { NoteReducer } from "./NoteReducer";
 import { NoteContext } from "./NoteContexts";
 
-const initialState: NoteState = {
+let initialState: NoteState = {
     totalNotes:0,
     notes:[
         {
@@ -14,7 +14,7 @@ const initialState: NoteState = {
     ]
 }
 
-export function NoteProvider ({children} : Children) {
+export function NoteProvider ({children} : Children): JSX.Element {
 
     const [noteState, dispatch] = useReducer( NoteReducer, initialState)
 
@@ -24,9 +24,12 @@ export function NoteProvider ({children} : Children) {
     function handlerDeleteNote(id: string) {
         dispatch({type:"deleteNote", payload: { id }})
     }
+    function handlerUpdateNote (id: string) {
+        dispatch({type:"updateNote", payload: {id}})
+    }
 
     return (
-        <NoteContext.Provider value={{noteState, handlerSendNote, handlerDeleteNote}}>
+        <NoteContext.Provider value={{noteState, handlerSendNote, handlerDeleteNote, handlerUpdateNote}}>
             {children}
         </NoteContext.Provider>
     )
